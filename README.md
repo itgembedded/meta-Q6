@@ -60,13 +60,7 @@ Example:
     MACHINE=jciq6 source setup-environment build-Q6
     MACHINE=jciq6 bitbake core-image-base
  
-### Setup and Build Toolchain    
-    MACHINE=<machine name> bitbake core-image-base -c populate_sdk
-     
-### Setup and Build FSL GUI image
-    MACHINE=<machine name> source fsl-setup-release.sh -b build-x11 -e x11
-    MACHINE=<machine name> bitbake fsl-image-gui
- 
+
 # Creating SD card
 Output directories and file names depend on what you build. Following example is based on running 'bitbake core-image-base':
  
@@ -78,7 +72,7 @@ Output directories and file names depend on what you build. Following example is
      
 # Testing it on Q6 
 
-To test your SD card, plug in the card which you have just created into the Q6 board. Reset the Q6 board (press "Reset" button).  
+To test your SD card, plug in the card and reset the Q6 board (press "Reset" button).  
 
 	1) U-Boot will load & execute from the base of the SD Card.
 	2) U-Boot will load & execute optional boot script from SD partition 1 (boot_Q6.scr)
