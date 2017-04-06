@@ -29,7 +29,7 @@ SRCBRANCH ??= "jethro"
 SRC_URI = "git://github.com/itgembedded/Q6-uboot-v2015.10.git;branch=${SRCBRANCH}"
 
 #SRCREV is the commit number, must be always changed for a new version
-SRCREV = "138080748288573dcf00d0931e90163e65d0786d"
+SRCREV = "f811563a0e91ce4a5238f7338218ce18c9f16f9b"
 
 S = "${WORKDIR}/git"
 
